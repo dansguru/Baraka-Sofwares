@@ -74,32 +74,59 @@ const ServicesSection = () => {
                             )}
 
 
-                            <div className={`relative bg-white p-6 rounded-2xl border transition-all duration-300 group-hover:border-blue-300 ${
+                            <div className={`relative bg-white p-6 rounded-2xl border transition-all duration-300 group-hover:border-blue-300 overflow-hidden ${
                                 service.popular
                                     ? 'border-blue-300 shadow-lg'
                                     : 'border-gray-200 shadow-md'
                             }`}>
 
+                                {/* FULL CARD BACKGROUND ILLUSTRATION - Like Spotify */}
+                                {service.illustration && (
+                                    <div className="absolute inset-0 z-0 opacity-5">
+                                        <img
+                                            src={service.illustration}
+                                            alt=""
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                )}
 
-                                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-30"></div>
+                                {/* TOP-RIGHT CORNER ILLUSTRATION - Like Spotify album corner */}
+                                {service.illustration && (
+                                    <div className="absolute top-4 right-4 w-20 h-20 z-10">
+                                        <img
+                                            src={service.illustration}
+                                            alt=""
+                                            className="w-full h-full object-cover rounded-lg shadow-lg"
+                                        />
+                                    </div>
+                                )}
 
+                                {/* Premium badge overlay */}
+                                {service.premium && (
+                                    <div className="absolute -top-2 -right-2 w-10 h-10 z-20">
+                                        <img
+                                            src="/assets/premium-badge.svg"
+                                            alt="Premium"
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                )}
 
-                                <div className="mb-6">
-                                    <div className="w-16 h-16 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
+                                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-30 z-10"></div>
+
+                                <div className="relative z-10 mb-6">
+                                    <div className="w-16 h-16 rounded-xl bg-blue-50/80 border border-blue-100 flex items-center justify-center">
                                         <div className="text-2xl text-blue-600">{service.icon}</div>
-
                                         <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
                                     </div>
                                 </div>
 
-
-                                <div className="space-y-5">
-
+                                <div className="relative z-10 space-y-5">
                                     <div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
                                             {service.title}
                                         </h3>
-
 
                                         <div className="flex items-center justify-between">
                                             <div className="flex items-center gap-2">
@@ -118,27 +145,24 @@ const ServicesSection = () => {
                                         </div>
                                     </div>
 
-
                                     <p className="text-gray-600 text-sm leading-relaxed">
                                         {service.description}
                                     </p>
 
-
                                     <div className="pt-4 border-t border-gray-100">
                                         <div className="flex flex-wrap gap-2">
                                             {service.technologies.slice(0, 3).map((tech, index) => (
-                                                <span key={index} className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">
+                                                <span key={index} className="px-3 py-1 bg-blue-50/80 text-blue-700 text-xs font-medium rounded-full">
                                                     {tech}
                                                 </span>
                                             ))}
                                             {service.technologies.length > 3 && (
-                                                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">
+                                                <span key="more" className="px-3 py-1 bg-gray-100/80 text-gray-600 text-xs font-medium rounded-full">
                                                     +{service.technologies.length - 3}
                                                 </span>
                                             )}
                                         </div>
                                     </div>
-
 
                                     <div className="space-y-3">
                                         <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
@@ -159,20 +183,18 @@ const ServicesSection = () => {
                                     </div>
                                 </div>
 
+                                <div className="absolute top-3 left-3 w-2 h-2 border border-blue-300 rounded-full z-10"></div>
+                                <div className="absolute top-3 right-3 w-2 h-2 border border-blue-300 rounded-full z-10"></div>
+                                <div className="absolute bottom-3 left-3 w-2 h-2 border border-blue-300 rounded-full z-10"></div>
+                                <div className="absolute bottom-3 right-3 w-2 h-2 border border-blue-300 rounded-full z-10"></div>
 
-                                <div className="absolute top-3 left-3 w-2 h-2 border border-blue-300 rounded-full"></div>
-                                <div className="absolute top-3 right-3 w-2 h-2 border border-blue-300 rounded-full"></div>
-                                <div className="absolute bottom-3 left-3 w-2 h-2 border border-blue-300 rounded-full"></div>
-                                <div className="absolute bottom-3 right-3 w-2 h-2 border border-blue-300 rounded-full"></div>
-
-
-                                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-300 z-10"></div>
                             </div>
                         </div>
                     ))}
                 </div>
 
-
+                {/* Rest of the component remains the same */}
                 <div className="mt-20">
                     <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
                         <div className="text-center mb-12">
@@ -188,7 +210,6 @@ const ServicesSection = () => {
                                 We deliver technology solutions that are not just technically sound, but also drive measurable business outcomes.
                             </p>
                         </div>
-
 
                         <div className="grid md:grid-cols-3 gap-8 mb-12">
                             {[
@@ -216,7 +237,6 @@ const ServicesSection = () => {
                             ))}
                         </div>
 
-
                         <div className="border-t border-gray-100 pt-12">
                             <h4 className="text-lg font-semibold text-gray-900 text-center mb-8">Our Development Process</h4>
                             <div className="grid md:grid-cols-4 gap-6">
@@ -242,7 +262,6 @@ const ServicesSection = () => {
                             </div>
                         </div>
 
-
                         <div className="mt-12 pt-8 border-t border-gray-100">
                             <div className="text-center">
                                 <div className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">
@@ -260,7 +279,6 @@ const ServicesSection = () => {
                         </div>
                     </div>
                 </div>
-
 
                 <div className="mt-16">
                     <div className="bg-gradient-to-r from-blue-50 to-white border border-blue-100 rounded-2xl p-10">

@@ -108,7 +108,7 @@ const DesktopDans = () => {
                                 </div>
                             </div>
 
-                          
+
                             <div className="grid grid-cols-2 gap-3">
                                 <div className="flex items-center gap-2 p-3 bg-blue-50 rounded-lg">
                                     <Cpu className="w-5 h-5 text-blue-600" />

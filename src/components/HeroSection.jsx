@@ -1,16 +1,27 @@
 const HeroSection = () => {
     return (
         <section id="home" className="relative flex flex-col items-center justify-center min-h-[90vh] px-4 overflow-hidden bg-white">
-            {/* pattern overlay */}
+            {/* Illustration Background */}
             <div className="absolute inset-0">
-
-                <div className="absolute inset-0 opacity-10">
-                    <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.08)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
+                {/* Main Illustration Background */}
+                <div className="absolute inset-0 opacity-15">
+                    <img
+                        src="/assets/illustrations/hero-bg.jpg"
+                        alt="Technology Background"
+                        className="w-full h-full object-cover"
+                    />
                 </div>
 
+                <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/20 to-white/40"></div>
 
-                <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-blue-50 to-transparent"></div>
+
+                <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-blue-50/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-blue-50/30 to-transparent"></div>
+
+
+                <div className="absolute inset-0 opacity-20">
+                    <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.08)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
+                </div>
 
 
                 <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-blue-400 rounded-full animate-pulse opacity-70"></div>
@@ -19,11 +30,10 @@ const HeroSection = () => {
             </div>
 
             <div className="relative z-10 w-full flex flex-col items-center justify-center">
-                <div className="relative bg-white p-8 md:p-12 rounded-3xl shadow-2xl shadow-blue-200/50 border border-blue-100 w-full max-w-5xl">
+                <div className="relative bg-white/95 backdrop-blur-sm p-8 md:p-12 rounded-3xl shadow-2xl shadow-blue-200/50 border border-blue-100 w-full max-w-5xl">
 
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-30"></div>
                     <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-30"></div>
-
 
                     <div className="absolute -top-3 -left-3 w-5 h-5">
                         <div className="w-full h-full bg-blue-500 rounded-full animate-pulse shadow-[0_0_12px_3px_rgba(59,130,246,0.3)]"></div>
@@ -55,7 +65,6 @@ const HeroSection = () => {
                         <p className="mt-8 text-lg text-center text-gray-600 max-w-3xl mx-auto leading-relaxed">
                             Transforming ideas into powerful digital experiences with cutting-edge technology and creative expertise.
                         </p>
-
 
                         <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
                             <button
@@ -94,19 +103,14 @@ const HeroSection = () => {
                             </button>
                         </div>
 
-
                         <div className="mt-12 relative">
-
                             <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/10 via-transparent to-blue-400/10 blur-lg"></div>
 
-
-                            <div className="relative bg-gradient-to-br from-white to-blue-50 p-6 md:p-8 rounded-2xl border border-blue-200 shadow-lg">
-
+                            <div className="relative bg-gradient-to-br from-white/95 to-blue-50/95 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-blue-200 shadow-lg">
                                 <div className="absolute inset-0 border border-blue-100 rounded-2xl"></div>
                                 <div className="absolute top-4 left-4 right-4 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
 
                                 <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-
                                     <div className="text-center md:text-left">
                                         <div className="text-blue-700 font-mono text-xs uppercase tracking-widest mb-2 flex items-center gap-2">
                                             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
@@ -119,7 +123,6 @@ const HeroSection = () => {
                                             100% CLIENT SATISFACTION
                                         </div>
                                     </div>
-
 
                                     <div className="hidden md:block h-12 w-px bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
 
@@ -137,9 +140,7 @@ const HeroSection = () => {
                                         </div>
                                     </div>
 
-
                                     <div className="hidden md:block h-12 w-px bg-gradient-to-b from-transparent via-blue-300 to-transparent"></div>
-
 
                                     <div className="text-center md:text-right">
                                         <div className="text-blue-700 font-mono text-xs uppercase tracking-widest mb-2">
@@ -157,10 +158,8 @@ const HeroSection = () => {
                                     </div>
                                 </div>
 
-
                                 <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-[scan_3s_linear_infinite] opacity-60"></div>
                             </div>
-
 
                             <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-blue-400/50 rounded-tl-lg"></div>
                             <div className="absolute -top-2 -right-2 w-4 h-4 border-t-2 border-r-2 border-blue-400/50 rounded-tr-lg"></div>
@@ -168,26 +167,24 @@ const HeroSection = () => {
                             <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-blue-400/50 rounded-br-lg"></div>
                         </div>
 
-
                         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                            <div className="p-4 rounded-xl bg-gradient-to-b from-white to-blue-50 border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div className="p-4 rounded-xl bg-gradient-to-b from-white/95 to-blue-50/95 backdrop-blur-sm border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                                 <div className="text-blue-700 text-sm font-mono font-semibold">WEB DEVELOPMENT</div>
                                 <div className="text-gray-500 text-xs mt-1">Cutting-edge Solutions</div>
                             </div>
-                            <div className="p-4 rounded-xl bg-gradient-to-b from-white to-blue-50 border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div className="p-4 rounded-xl bg-gradient-to-b from-white/95 to-blue-50/95 backdrop-blur-sm border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                                 <div className="text-blue-700 text-sm font-mono font-semibold">CYBER SECURITY</div>
                                 <div className="text-gray-500 text-xs mt-1">System Protection</div>
                             </div>
-                            <div className="p-4 rounded-xl bg-gradient-to-b from-white to-blue-50 border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div className="p-4 rounded-xl bg-gradient-to-b from-white/95 to-blue-50/95 backdrop-blur-sm border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                                 <div className="text-blue-700 text-sm font-mono font-semibold">SOFTWARE ENGINEERING</div>
                                 <div className="text-gray-500 text-xs mt-1">Custom Solutions</div>
                             </div>
-                            <div className="p-4 rounded-xl bg-gradient-to-b from-white to-blue-50 border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div className="p-4 rounded-xl bg-gradient-to-b from-white/95 to-blue-50/95 backdrop-blur-sm border border-blue-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                                 <div className="text-blue-700 text-sm font-mono font-semibold">DIGITAL TRANSFORMATION</div>
                                 <div className="text-gray-500 text-xs mt-1">Business Growth</div>
                             </div>
                         </div>
-
 
                         <div className="mt-8 flex justify-center space-x-4">
                             <a href="https://www.facebook.com/profile.php?id=61577243083516" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
@@ -206,7 +203,6 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-
                 <div className="mt-12 animate-bounce">
                     <div className="text-gray-500 text-sm flex flex-col items-center font-mono">
                         <span className="text-blue-600 font-semibold">SCROLL TO EXPLORE</span>
@@ -216,7 +212,6 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-
 
             <div id="hero-section"></div>
 

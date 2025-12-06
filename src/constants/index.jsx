@@ -9,7 +9,9 @@ export const services = [
         duration: "2-8 Weeks",
         projectScope: "From MVP to Enterprise",
         popular: true,
+        premium: true,
         icon: "🌐",
+        illustration: "/assets/illustrations/web-development.jpg",
         technologies: ["React", "Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
         features: [
             "Responsive Design",
@@ -27,7 +29,9 @@ export const services = [
         duration: "4-12 Weeks",
         projectScope: "iOS & Android",
         popular: false,
+        premium: true,
         icon: "📱",
+        illustration: "/assets/illustrations/mobile-app.jpg",
         technologies: ["React Native", "Flutter", "iOS", "Android", "Firebase"],
         features: [
             "Cross-platform Compatibility",
@@ -45,7 +49,9 @@ export const services = [
         duration: "1-4 Weeks",
         projectScope: "Assessment & Implementation",
         popular: true,
+        premium: true,
         icon: "🔒",
+        illustration: "/assets/illustrations/cyber-security.jpg",
         technologies: ["Penetration Testing", "Vulnerability Assessment", "Security Audits", "Firewall Config"],
         features: [
             "Security Assessment",
@@ -63,7 +69,9 @@ export const services = [
         duration: "2-6 Weeks",
         projectScope: "Wireframes to Prototype",
         popular: false,
+        premium: false,
         icon: "🎨",
+        illustration: "/assets/illustrations/ui-ux-design.jpg",
         technologies: ["Figma", "Adobe XD", "Sketch", "Prototyping", "User Testing"],
         features: [
             "User Research",
@@ -81,7 +89,9 @@ export const services = [
         duration: "4-16 Weeks",
         projectScope: "Custom Solutions",
         popular: false,
+        premium: false,
         icon: "⚙️",
+        illustration: "/assets/illustrations/software-engineering.jpg",
         technologies: ["Python", "Java", "C#", "AWS", "Docker", "Kubernetes"],
         features: [
             "Custom Software Development",
@@ -99,7 +109,9 @@ export const services = [
         duration: "Ongoing",
         projectScope: "Strategic Partnership",
         popular: true,
+        premium: true,
         icon: "🚀",
+        illustration: "/assets/illustrations/digital-transformation.jpg",
         technologies: ["Digital Strategy", "Process Automation", "Cloud Migration", "Data Analytics"],
         features: [
             "Digital Strategy",
