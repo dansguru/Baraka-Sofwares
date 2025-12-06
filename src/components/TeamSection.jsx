@@ -11,7 +11,7 @@ const TeamSection = () => {
             id: 1,
             name: "Erastus Odira",
             role: "Manager & Cyber Security Specialist",
-            image: "images/Erastus photo.jpg",
+            image: "/src/assets/Erastus photo.jpg",
             description: "Expert in system protection, vulnerability assessment, and security architecture with a passion for keeping digital assets secure.",
             skills: ["Cybersecurity", "Network Security", "Vulnerability Assessment", "Risk Management"],
             social: {
@@ -23,7 +23,7 @@ const TeamSection = () => {
             id: 3,
             name: "Bob Nyaande",
             role: "Front-End Developer",
-            image: "images/Bob photo.jpg",
+            image: "/src/assets/Bob photo.jpg",
             description: "Creates intuitive user interfaces and engaging user experiences with a focus on performance and accessibility.",
             skills: ["React", "Next.js", "TypeScript", "UI/UX", "Responsive Design"],
             social: {
@@ -35,7 +35,7 @@ const TeamSection = () => {
             id: 4,
             name: "Monari Gichana",
             role: "UI/UX Designer & Testing Specialist",
-            image: "images/Abb photo.jpg",
+            image: "/src/assets/Abb photo.jpg",
             description: "Designs clean, user-friendly interfaces and ensures the website delivers a smooth, intuitive experience through comprehensive testing and optimization.",
             skills: ["UI/UX Design", "Figma", "Prototyping", "User Testing", "Quality Assurance"],
             social: {
