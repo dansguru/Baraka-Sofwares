@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <circle cx="32" cy="32" r="28" fill="url(#gradient0)" />
+
+
+    <circle cx="32" cy="32" r="20" fill="white" />
+
+
+    <path d="M26 22C26 20.8954 26.8954 20 28 20H32C35.3137 20 38 22.6863 38 26V38C38 41.3137 35.3137 44 32 44H28C26.8954 44 26 43.1046 26 42V22Z" fill="url(#gradient1)" />
+
+
+    <circle cx="34" cy="32" r="4" fill="url(#gradient2)" />
+
+
+    <path d="M40 24L48 20" stroke="white" stroke-width="2" stroke-linecap="round" />
+    <path d="M40 40L48 44" stroke="white" stroke-width="2" stroke-linecap="round" />
+    <path d="M24 24L16 20" stroke="white" stroke-width="2" stroke-linecap="round" />
+    <path d="M24 40L16 44" stroke="white" stroke-width="2" stroke-linecap="round" />
+
+
+    <circle cx="48" cy="16" r="2" fill="url(#gradient3)" opacity="0.8" />
+    <circle cx="48" cy="48" r="2" fill="url(#gradient3)" opacity="0.8" />
+    <circle cx="16" cy="16" r="2" fill="url(#gradient3)" opacity="0.8" />
+    <circle cx="16" cy="48" r="2" fill="url(#gradient3)" opacity="0.8" />
+
+
+    <defs>
+
+        <linearGradient id="gradient0" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#6366F1"/>
+            <stop offset="1" stop-color="#8B5CF6"/>
+        </linearGradient>
+
+
+        <linearGradient id="gradient1" x1="26" y1="20" x2="38" y2="44" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F46E5"/>
+            <stop offset="1" stop-color="#7C3AED"/>
+        </linearGradient>
+
+
+        <radialGradient id="gradient2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34 32) rotate(45) scale(4)">
+            <stop stop-color="#FBBF24"/>
+            <stop offset="1" stop-color="#F59E0B"/>
+        </radialGradient>
+
+
+        <radialGradient id="gradient3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16 16) rotate(45) scale(2)">
+            <stop stop-color="#FFFFFF"/>
+            <stop offset="1" stop-color="#CBD5E1"/>
+        </radialGradient>
+    </defs>
+</svg>
