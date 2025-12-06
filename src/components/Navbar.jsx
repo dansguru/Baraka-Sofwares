@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom"; // Added imports
-import logo from "../assets/logo.png";
+import logo from "../../public/assets/logo.png";
 
 const Navbar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);

@@ -1,49 +1,12 @@
 import { useState } from "react";
 import { X, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import teamMembers from "../constants/index.jsx";
 
 const TeamSection = () => {
     const [activeMember, setActiveMember] = useState(null);
     const navigate = useNavigate();
 
-    const teamMembers = [
-        {
-            id: 1,
-            name: "Erastus Odira",
-            role: "Manager & Cyber Security Specialist",
-            image: "/src/assets/Erastus photo.jpg",
-            description: "Expert in system protection, vulnerability assessment, and security architecture with a passion for keeping digital assets secure.",
-            skills: ["Cybersecurity", "Network Security", "Vulnerability Assessment", "Risk Management"],
-            social: {
-                github: "https://github.com/Baraka-hub47/",
-                twitter: "https://x.com/Erastus_tech/"
-            }
-        },
-        {
-            id: 3,
-            name: "Bob Nyaande",
-            role: "Front-End Developer",
-            image: "/src/assets/Bob photo.jpg",
-            description: "Creates intuitive user interfaces and engaging user experiences with a focus on performance and accessibility.",
-            skills: ["React", "Next.js", "TypeScript", "UI/UX", "Responsive Design"],
-            social: {
-                github: "https://github.com/Bobb-35",
-                twitter: "https://x.com/Bobb_tech/"
-            }
-        },
-        {
-            id: 4,
-            name: "Monari Gichana",
-            role: "UI/UX Designer & Testing Specialist",
-            image: "/src/assets/Abb photo.jpg",
-            description: "Designs clean, user-friendly interfaces and ensures the website delivers a smooth, intuitive experience through comprehensive testing and optimization.",
-            skills: ["UI/UX Design", "Figma", "Prototyping", "User Testing", "Quality Assurance"],
-            social: {
-                dribbble: "#",
-                behance: "#"
-            }
-        }
-    ];
 
     const handleMemberClick = (member) => {
         setActiveMember(member);
@@ -89,9 +52,8 @@ const TeamSection = () => {
                         </p>
                     </div>
 
-                    {/* GitHub-inspired Circular Team Display */}
                     <div className="relative">
-                        {/* Team Circles Grid - Now 3 members */}
+
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 max-w-3xl mx-auto">
                             {teamMembers.map((member) => (
                                 <button
@@ -166,10 +128,9 @@ const TeamSection = () => {
                                         <span className="text-2xl">✨</span>
                                     </div>
 
-                                    {/* Animated background effect */}
+
                                     <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300 -z-10"></div>
 
-                                    {/* Glowing border effect */}
                                     <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl opacity-0 group-hover:opacity-30 blur-md transition-opacity duration-300 -z-20"></div>
 
                                     {/* Floating elements */}
@@ -189,13 +150,12 @@ const TeamSection = () => {
                             </div>
                         </div>
 
-                        {/* Connection Lines (GitHub Contributor Graph Style) */}
                         <div className="absolute top-16 left-0 right-0 h-px bg-gray-200 hidden sm:block"></div>
                         <div className="absolute top-16 left-1/3 w-px h-20 bg-gray-200 hidden sm:block"></div>
                         <div className="absolute top-16 left-2/3 w-px h-20 bg-gray-200 hidden sm:block"></div>
                     </div>
 
-                    {/* Team Stats - Professional */}
+                    {/* Team Stats*/}
                     <div className="mt-20 pt-12 border-t border-gray-200">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                             <div className="text-center">

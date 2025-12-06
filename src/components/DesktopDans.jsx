@@ -28,7 +28,7 @@ const DesktopDans = () => {
                         {/* Cover Image */}
                         <div className="flex justify-center">
                             <img
-                                src="/src/assets/Cover.png"
+                                src="/assets/Cover.png"
                                 alt="Dan's Cover"
                                 className="w-full max-w-md h-auto object-contain rounded-xl shadow-lg"
                             />
@@ -96,7 +96,7 @@ const DesktopDans = () => {
                         <div className="grid grid-cols-2 gap-12 items-center">
                             <div className="transform -rotate-3 hover:rotate-0 transition-transform duration-500">
                                 <img
-                                    src="/src/assets/creative-process.png"
+                                    src="/assets/creative-process.png"
                                     alt="Creative Process"
                                     className="w-full max-w-xs h-auto object-contain rounded-xl shadow-xl"
                                 />
@@ -132,7 +132,7 @@ const DesktopDans = () => {
                             <div className="order-2">
                                 <div className="transform rotate-3 hover:rotate-0 transition-transform duration-500">
                                     <img
-                                        src="/src/assets/design-vision.png"
+                                        src="/assets/design-vision.png"
                                         alt="Design Vision"
                                         className="w-full max-w-xs h-auto object-contain rounded-xl shadow-xl"
                                     />
@@ -168,7 +168,7 @@ const DesktopDans = () => {
                         <div className="grid grid-cols-2 gap-12 items-center">
                             <div className="transform -rotate-1 hover:rotate-0 transition-transform duration-500">
                                 <img
-                                    src="/src/assets/future-focus.png"
+                                    src="/assets/future-focus.png"
                                     alt="Future Focus"
                                     className="w-full max-w-xs h-auto object-contain rounded-xl shadow-xl"
                                 />

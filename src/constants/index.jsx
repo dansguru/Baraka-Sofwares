@@ -110,3 +110,42 @@ export const services = [
         ]
     }
 ];
+const teamMembers = [
+    {
+        id: 1,
+        name: "Erastus Odira",
+        role: "Manager & Cyber Security Specialist",
+        image: "/assets/Erastus photo.jpg",
+        description: "Expert in system protection, vulnerability assessment, and security architecture with a passion for keeping digital assets secure.",
+        skills: ["Cybersecurity", "Network Security", "Vulnerability Assessment", "Risk Management"],
+        social: {
+            github: "https://github.com/Baraka-hub47/",
+            twitter: "https://x.com/Erastus_tech/"
+        }
+    },
+    {
+        id: 3,
+        name: "Bob Nyaande",
+        role: "Front-End Developer",
+        image: "/assets/Bob photo.jpg",
+        description: "Creates intuitive user interfaces and engaging user experiences with a focus on performance and accessibility.",
+        skills: ["React", "Next.js", "TypeScript", "UI/UX", "Responsive Design"],
+        social: {
+            github: "https://github.com/Bobb-35",
+            twitter: "https://x.com/Bobb_tech/"
+        }
+    },
+    {
+        id: 4,
+        name: "Monari Gichana",
+        role: "UI/UX Designer & Testing Specialist",
+        image: "/assets/Abb photo.jpg",
+        description: "Designs clean, user-friendly interfaces and ensures the website delivers a smooth, intuitive experience through comprehensive testing and optimization.",
+        skills: ["UI/UX Design", "Figma", "Prototyping", "User Testing", "Quality Assurance"],
+        social: {
+            dribbble: "#",
+            behance: "#"
+        }
+    }
+];
+export default teamMembers

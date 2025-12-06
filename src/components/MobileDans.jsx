@@ -25,7 +25,7 @@ const MobileDans = () => {
             <div className="pt-16">
                 <div className="h-[60vh] w-full flex items-center justify-center px-4">
                     <img
-                        src="/src/assets/Cover.png"
+                        src="/assets/Cover.png"
                         alt="Dan's Cover"
                         className="w-full h-full object-contain"
                     />
@@ -77,7 +77,7 @@ const MobileDans = () => {
                 <div className="space-y-4">
                     <div className="flex justify-center">
                         <img
-                            src="/src/assets/creative-process.png"
+                            src="/assets/creative-process.png"
                             alt="Creative Process"
                             className="w-64 h-auto object-contain rounded-lg"
                         />
@@ -95,7 +95,7 @@ const MobileDans = () => {
                 <div className="space-y-4">
                     <div className="flex justify-center">
                         <img
-                            src="/src/assets/design-vision.png"
+                            src="/assets/design-vision.png"
                             alt="Design Vision"
                             className="w-64 h-auto object-contain rounded-lg transform -rotate-1"
                         />
@@ -113,7 +113,7 @@ const MobileDans = () => {
                 <div className="space-y-4">
                     <div className="flex justify-center">
                         <img
-                            src="/src/assets/future-focus.png"
+                            src="/assets/future-focus.png"
                             alt="Future Focus"
                             className="w-64 h-auto object-contain rounded-lg transform rotate-1"
                         />
